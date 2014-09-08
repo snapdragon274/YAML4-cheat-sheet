@@ -1,589 +1,955 @@
 <!DOCTYPE html>
+
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Yaml4-cheat-sheet : A cheat sheet for YAML4 in pdf and online version">
-
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="description" content=
+  "Yaml4-cheat-sheet : A cheat sheet for YAML4 in pdf and online version">
+  <!--
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+-->
+  <!-- Mobile viewport optimisation -->
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <!--[if lte IE 7]>
+                <link href="css/yaml/core/iehacks.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+  <!--[if lt IE 9]>
+                <script src="../lib/html5shiv/html5shiv.js"></script>
+        <![endif]-->
+  <!-- (en) Add your meta data here -->
+  <!-- (de) Fuegen Sie hier ihre Meta-Daten ein -->
 
-    <title>Yaml4-cheat-sheet</title>
-  </head>
+  <title>Yaml4-cheat-sheet</title>
+</head>
 
-  <body>
+<body>
+  <!-- HEADER -->
+  <!--            <header> -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/snapdragon274/YAML4-cheat-sheet">View on GitHub</a>
+  <div class="ym-wrapper">
+    <div class="ym-wbox">
+      <a id="forkme_banner" href=
+      "https://github.com/snapdragon274/YAML4-cheat-sheet">View on
+      GitHub</a>
 
-          <h1 id="project_title">Yaml4-cheat-sheet</h1>
-          <h2 id="project_tagline">A cheat sheet for YAML4 in pdf and online version</h2>
+      <h1 id="project_title">Yaml4-cheat-sheet</h1>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/snapdragon274/YAML4-cheat-sheet/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/snapdragon274/YAML4-cheat-sheet/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+      <h2 id="project_tagline">A cheat sheet for YAML4 in pdf and
+      online version</h2>
+      <!--                                    <section id="downloads"> -->
+      <a class="zip_download_link" href=
+      "https://github.com/snapdragon274/YAML4-cheat-sheet/zipball/master">Download
+      this project as a .zip file</a> <a class="tar_download_link"
+      href=
+      "https://github.com/snapdragon274/YAML4-cheat-sheet/tarball/master">
+      Download this project as a tar.gz file</a> 
+      <!-- ,                                  </section> -->
     </div>
+  </div><!--            </header> -->
+  <!-- MAIN CONTENT -->
+  <!--            <main> -->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>YAML4 Cheatsheet</p>
+  <div class="ym-wrapper">
+    <h3 class="ym-gbox">Preface</h3>
 
-<p>This is the HTML version of the YAML4 cheatsheet. You can find the original pdf version <a href="https://github.com/snapdragon274/YAML4-cheat-sheet" title="YAML4 pdf cheat sheet" target="_blank">here</a>.</p>
+    <p class="ym-gbox">This is the HTML version of the YAML4
+    cheatsheet. You can find the original pdf version <a href=
+    "https://github.com/snapdragon274/YAML4-cheat-sheet/raw/master/yaml4-cheatsheet.pdf"
+    title="YAML4 pdf cheat sheet" target="_blank">here</a>.</p>
 
-<p>This is a very simplified version (the pdf is way cooler) but will be updated in the not so distant future to give you a fancy cheating option not only for your computer but also for your mobile phone.</p>
+    <p class="ym-gbox">This is a very simplified version (the pdf
+    is way cooler) but will be updated in the not so distant future
+    to give you a fancy cheating option not only for your computer
+    but also for your mobile phone.</p>
 
-<p>YAML4 is a modular, code based CSS framework. First published in October 2005 the author Dirk Jesse offers with YAML a base for developing flexible layouts. Especially the work with flexible (elastic, fluid) containers and various units is made easier with YAML. YAML offers a complete set of matching building blocks which allow to easily create complex websites. Among this set are grids, navigation, forms, typography modules and all offered add-on. YAML is a device independent design. All layout modules are compatible with HTML5 and CSS3. YAML is regularly updated and third-party developers offer tutorials and templates.</p>
+    <p class="ym-gbox">YAML4 is a modular, code based CSS
+    framework. First published in October 2005 the author Dirk
+    Jesse offers with YAML a base for developing flexible layouts.
+    Especially the work with flexible (elastic, fluid) containers
+    and various units is made easier with YAML. YAML offers a
+    complete set of matching building blocks which allow to easily
+    create complex websites. Among this set are grids, navigation,
+    forms, typography modules and all offered add-on. YAML is a
+    device independent design. All layout modules are compatible
+    with HTML5 and CSS3. YAML is regularly updated and third-party
+    developers offer tutorials and templates.</p>
 
-<p>(Cf.: <a href="http://www.yaml.de/" title="YAML4" target="_blank">YAML4</a>)</p>
+    <p class="ym-gbox">(Cf.: <a href="http://www.yaml.de/" title=
+    "YAML4" target="_blank">YAML4</a>)</p>
 
-<p>As YAML is obviously the perfect option to create websites with various requirements in a fast and easy way, the FAU's web building blocks is going to be changed to a YAML4 based design.</p>
+    <p class="ym-gbox">As YAML is obviously the perfect option to
+    create websites with various requirements in a fast and easy
+    way, the FAU's web building blocks is going to be changed to a
+    YAML4 based design.</p>
 
-<p>To make the work easier for developers and future users, the new CSS framework comes with a free YAML4 cheat-sheet, made by the RRZE. The users can find all important code fragments and their functions, the base code (base.css) to create a YAML4 design and various elements that YAML4 offers in a fast, easy and colorful way.</p>
+    <p class="ym-gbox">To make the work easier for developers and
+    future users, the new CSS framework comes with a free YAML4
+    cheat-sheet, made by the RRZE. The users can find all important
+    code fragments and their functions, the base code (base.css) to
+    create a YAML4 design and various elements that YAML4 offers in
+    a fast, easy and colorful way.</p>
 
-<p>The cheat-sheet is like YAML4 under the Creative Commons Licence (3.0)</p>
+    <p class="ym-gbox">The cheat-sheet is like YAML4 under the
+    Creative Commons Licence (3.0)</p>
 
-<p>Happy developing!</p>
+    <p class="ym-gbox">Happy developing!</p>
+    <hr>
 
-<hr>
-<p>&nbsp;</p>
-<p><h4>Stylesheet base.css</h4>
-</p>
-<p>yaml/<br>
-|--- add-ons/<br>
-|	|--- accessible-tabs/<br>
-|	|	|--- jquery.tabs.js<br>
-|	|	|__ tabs.css<br>
-|	|--- microformats/<br>
-|	|	|--- icons/<br>
-|	|	|__ microformats.css<br>
-|	|--- rtl-support/<br>
-|	|	|--- core/<br> 
-|	|	|	|--- base-rtl.css<br>
-|	|	|	|__ base-rtl.min.css<br>
-|	|	|--- navigation/<br>
-|	|	|	|--- hlist-rtl.css<br>
-|	|	|	|__ vlist-rtl.css<br>
-|	|	|__ screen/<br>
-|	|	|__ typoghraphy-rtl.css<br>
-|	|__ microformats<br>
-|	|__ jquery.syncheights.css<br>
-|--- core/<br>
-|	|--- base.css<br>
-|	|--- base.min.css<br>
-|	|--- iehacks.css<br>
-|	|__ iehacks.min.css<br>
-|--- forms/<br>
-|	|__ gray-theme.css<br>
-|--- navigation/<br>
-|	|--- hlist.css<br>
-|	|__ vlist.css<br>
-|--- print/<br>
-|	|__ print.css<br>
-|__ screen/<br>
-	|--- grid-960-12.css<br>
-	|--- grid-960-16.css<br>
-	|--- screen-FULLPAGE-layout.css<br>
-	|--- screen-PAGE-layout.css<br>
-	|__ typography.css</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<table width="200" border="1">
-  <tr>
-    <td><table width="200" border="1">
-      <tr>
-        <th scope="col">Grid class</th>
-        <th scope="col">Column Width</th>
-      </tr>
-      <tr>
-        <td>.ym-g20</td>
-        <td>20%</td>
-      </tr>
-      <tr>
-        <td>.ym-g25</td>
-        <td>25%</td>
-      </tr>
-      <tr>
-        <td>.ym-g33</td>
-        <td>33.33%</td>
-      </tr>
-      <tr>
-        <td>.ym-g38</td>
-        <td>38.2% (Golden Ratio)</td>
-      </tr>
-      <tr>
-        <td>.ym-g50</td>
-        <td>50%</td>
-      </tr>
-      <tr>
-        <td>.ym-g60</td>
-        <td>60%</td>
-      </tr>
-      <tr>
-        <td>.ym-g62</td>
-        <td>61.8% (Golden Ratio)</td>
-      </tr>
-      <tr>
-        <td>.ym-g66</td>
-        <td>66.66%</td>
-      </tr>
-      <tr>
-        <td>.ym-g75</td>
-        <td>75%</td>
-      </tr>
-      <tr>
-        <td>.ym-g80</td>
-        <td>80%</td>
-      </tr>
-    </table>
-      <table width="200" border="1">
-        <tr>
-          <th scope="col">Flexible Layouts</th>
-          <th scope="col">&nbsp;</th>
-        </tr>
-        <tr>
-          <td>.ym-wrapper</td>
-          <td>Separate values for width</td>
-        </tr>
-        <tr>
-          <td>.ym-wbox</td>
-          <td>Paddings and borders</td>
-        </tr>
-      </table></td>
-    <td><table width="200" border="1">
-      <tr>
-        <th scope="col">Grid</th>
-        <th scope="col">&nbsp;</th>
-      </tr>
-      <tr>
-        <td>.ym-grid</td>
-        <td>Parent class</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Child Classes</td>
-      </tr>
-      <tr>
-        <td>.ym-gl</td>
-        <td>Float direction is left</td>
-      </tr>
-      <tr>
-        <td>.ym-gr</td>
-        <td>Correction of rounding errors - floating direction of last column to the right</td>
-      </tr>
-      <tr>
-        <td>.ym-g[xx]</td>
-        <td>Independent control of column- and gutter-widths</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Optional Classes</td>
-      </tr>
-      <tr>
-        <td>.ym-equalize</td>
-        <td>Equalized column heights within a grid ro</td>
-      </tr>
-      <tr>
-        <td>.ym-gbox</td>
-        <td>Holds gutter vales (as padding or margin)</td>
-      </tr>
-      <tr>
-        <td>.ym-gbox-left</td>
-        <td>Aligned left</td>
-      </tr>
-      <tr>
-        <td>.ym-gbox-right</td>
-        <td>Alinged right</td>
-      </tr>
-      <tr>
-        <td>.linearize-level-1</td>
-        <td>Add to any grid module you want to be linearized</td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td><table width="200" border="1">
-      <tr>
-        <th scope="col">Float Classes</th>
-        <th scope="col">&nbsp;</th>
-      </tr>
-      <tr>
-        <td>.ym-clearfix</td>
-        <td>Clearing floats without extra markup, avoids margin-collapsing problems in static containers.</td>
-      </tr>
-      <tr>
-        <td>.ym-contain-dt</td>
-        <td>Containing floats, to display oversized child-elements.</td>
-      </tr>
-      <tr>
-        <td>.ym-contain-oh</td>
-        <td>Containing floats, overflow, for clipping of oversized child-elements by the parent element without scrollbars.</td>
-      </tr>
-      <tr>
-        <td>.ym-contain-fl</td>
-        <td>Containing float, if relative positioning of the attached element is needed. </td>
-      </tr>
-    </table></td>
-    <td><table width="200" border="1">
-      <tr>
-        <th scope="col">Buttons</th>
-        <th scope="col">&nbsp;</th>
-      </tr>
-      <tr>
-        <td>.ym-button</td>
-        <td>Default button style and size</td>
-      </tr>
-      <tr>
-        <td>.ym-small</td>
-        <td>A smaller button</td>
-      </tr>
-      <tr>
-        <td>.ym-xsmall</td>
-        <td>A very small button</td>
-      </tr>
-      <tr>
-        <td>.ym-large</td>
-        <td>A more emphasized button</td>
-      </tr>
-      <tr>
-        <td>.ym-xlarge</td>
-        <td>A very large button</td>
-      </tr>
-      <tr>
-        <td>.ym-primary</td>
-        <td>Primary action button (purple)</td>
-      </tr>
-      <tr>
-        <td>.ym-success</td>
-        <td>Positive action button (green)</td>
-      </tr>
-      <tr>
-        <td>.ym-warning</td>
-        <td>&quot;Take with care&quot; action button (yellow)</td>
-      </tr>
-      <tr>
-        <td>.ym-danger</td>
-        <td>Dangerous action button (red)</td>
-      </tr>
-    </table></td>
+    <p>&nbsp;</p>
 
-  </tr>
-  <tr>
-    <td><table width="200" border="1">
-      <tr>
-        <th scope="col">Form</th>
-        <th scope="col">&nbsp;</th>
-      </tr>
-      <tr>
-        <td>.ym-form</td>
-        <td>Parent class</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Row Wrapper</td>
-      </tr>
-      <tr>
-        <td>.ym-fbox</td>
-        <td>Creates box</td>
-      </tr>
-      <tr>
-        <td>.ym-fbox-footer</td>
-        <td>Box positioned as footer</td>
-      </tr>
-      <tr>
-        <td>.ym-fbox-wrap</td>
-        <td>Box wrapping</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>IE6 Helper Classes</td>
-      </tr>
-      <tr>
-        <td>.ym-fbox-text</td>
-        <td>For text input</td>
-      </tr>
-      <tr>
-        <td>.ym-fbox-select</td>
-        <td>Select-box</td>
-      </tr>
-      <tr>
-        <td>.ym-fbox-check</td>
-        <td>Check-box</td>
-      </tr>
-      <tr>
-        <td>.ym-fbox-button</td>
-        <td>For custom or submit button</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Optional classes</td>
-      </tr>
-      <tr>
-        <td>.ym-full</td>
-        <td>Provides a stacked view of labels and related form elements. Width of all form elements is normalized to 100% width.</td>
-      </tr>
-      <tr>
-        <td>.ym-columnar</td>
-        <td>Provides columnar arrangementof form elements.</td>
-      </tr>
-      <tr>
-        <td>.ym-inline</td>
-        <td>Creates inline</td>
-      </tr>
-      <tr>
-        <td>.ym-required</td>
-        <td>Visually emphasizes as required</td>
-      </tr>
-      <tr>
-        <td>.ym-error</td>
-        <td>Highlights form fields with invalid form elements.</td>
-      </tr>
-      <tr>
-        <td>.ym-message</td>
-        <td>For output messages that will be correctly aligned in all form styles</td>
-      </tr>
-      <tr>
-        <td>.ym-fbox heading</td>
-        <td>Use this before the button set for more consistent appearance of forms.</td>
-      </tr>
-      <tr>
-        <td>.ym-label</td>
-        <td>Forces any heading level to fit into your theme</td>
-      </tr>
-    </table></td>
-    <td><table width="200" border="1">
-      <tr>
-        <th scope="col">Typography</th>
-        <th scope="col">&nbsp;</th>
-      </tr>
-      <tr>
-        <td>H1 - H6</td>
-        <td>Headings</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Special Paragraphs</td>
-      </tr>
-      <tr>
-        <td>Class=&quot;highlight&quot;</td>
-        <td>Red</td>
-      </tr>
-      <tr>
-        <td>Class=&quot;dimmed&quot;</td>
-        <td>Grey</td>
-      </tr>
-      <tr>
-        <td>Class=&quot;box info&quot;</td>
-        <td>Grey box</td>
-      </tr>
-      <tr>
-        <td>Class=&quot;box success&quot;</td>
-        <td>Green box</td>
-      </tr>
-      <tr>
-        <td>Class=&quot;box warning&quot;</td>
-        <td>Yellow box</td>
-      </tr>
-      <tr>
-        <td>Class=&quot;box error&quot;</td>
-        <td>Red box</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Misc. Elements</td>
-      </tr>
-      <tr>
-        <td>&lt;blockquote&gt;</td>
-        <td>Pragraph text within &lt;blockquote&gt; element</td>
-      </tr>
-      <tr>
-        <td>&lt;pre&gt;</td>
-        <td>Preformatted text wrapped in &lt;pre&gt; element</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Inline Semantic Text Decoration</td>
-      </tr>
-      <tr>
-        <td>&lt;a&gt;</td>
-        <td>Anchor</td>
-      </tr>
-      <tr>
-        <td>&lt;i&gt;, &lt;em&gt;</td>
-        <td>Italics and emphasized</td>
-      </tr>
-      <tr>
-        <td>&lt;big&gt;, &lt;small&gt;</td>
-        <td>Big and small</td>
-      </tr>
-      <tr>
-        <td>&lt;b&gt;, &lt;strong&gt;</td>
-        <td>Bold and strong</td>
-      </tr>
-      <tr>
-        <td>&lt;acronym&gt;, &lt;abbr&gt;</td>
-        <td>Acronym and abbreviation</td>
-      </tr>
-      <tr>
-        <td>&lt;cite&gt;, &lt;q&gt;</td>
-        <td>Cite and quote</td>
-      </tr>
-      <tr>
-        <td>&lt;code&gt;, &lt;dfn&gt;</td>
-        <td>Code and definition</td>
-      </tr>
-      <tr>
-        <td>&lt;tt&gt;, &lt;kdb&gt;</td>
-        <td>Teletype and keyboard</td>
-      </tr>
-      <tr>
-        <td>&lt;var&gt;, &lt;samp&gt;</td>
-        <td>Variable and sample</td>
-      </tr>
-      <tr>
-        <td>&lt;ins&gt;, &lt;del&gt;</td>
-        <td>Inserted and deleted</td>
-      </tr>
-      <tr>
-        <td>&lt;sub&gt;, &lt;sup&gt;</td>
-        <td>Subscript and superscript</td>
-      </tr>
-      <tr>
-        <td>&lt;mark&gt;</td>
-        <td>Marked, highlighted</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Media</td>
-      </tr>
-      <tr>
-        <td>.flexible</td>
-        <td>Flexible media (responsive)</td>
-      </tr>
-      <tr>
-        <td>.bodered</td>
-        <td>Add border to images or videos</td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td><table width="200" border="1">
-      <tr>
-        <th scope="col">Columns</th>
-        <th scope="col">&nbsp;</th>
-      </tr>
-      <tr>
-        <td>.ym-column</td>
-        <td>Parent class</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Child Classes</td>
-      </tr>
-      <tr>
-        <td>.ym-col[1|2|3]</td>
-        <td>For independent control of column widths and paddings</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Optional Classes</td>
-      </tr>
-      <tr>
-        <td>.ym-cbox</td>
-        <td>Creates column box</td>
-      </tr>
-      <tr>
-        <td>.ym-cbox-left</td>
-        <td>Aligned left</td>
-      </tr>
-      <tr>
-        <td>.ym-cbox-right</td>
-        <td>Aligned right</td>
-      </tr>
-      <tr>
-        <td>.ym-linearize-level-1</td>
-        <td>Add to any column module you want to be linearized</td>
-      </tr>
-    </table>&nbsp;
-    <table width="200" border="1">
-      <tr>
-        <th scope="col">Accessible Tabs</th>
-        <th scope="col">&nbsp;</th>
-      </tr>
-      <tr>
-        <td>.jquery_tabs</td>
-        <td>Specific elements become tab headings</td>
-      </tr>
-      <tr>
-        <td>.tabbody</td>
-        <td>Defines content (or its wrapper)</td>
-      </tr>
-    </table><table width="200" border="1">
-        <tr>
-          <th scope="col">Tables</th>
-          <th scope="col">&nbsp;</th>
-        </tr>
-        <tr>
-          <td>.bordertable</td>
-          <td>Classic table style</td>
-        </tr>
-        <tr>
-          <td>.narrow</td>
-          <td>Smaller table rows</td>
-        </tr>
-      </table></td>
-    <td><table width="200" border="1">
-      <tr>
-        <th scope="col">Accessibility</th>
-        <th scope="col">&nbsp;</th>
-      </tr>
-      <tr>
-        <td>.ym-skiplinks</td>
-        <td>Parent class, controls the visual properties of the list. Unordered list.</td>
-      </tr>
-      <tr>
-        <td>.ym-skip</td>
-        <td>Child class. Each link in the list is marked up with this class. Required for skip anchors. </td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Optional Classes</td>
-      </tr>
-      <tr>
-        <td>.ym-hideme</td>
-        <td>Elements are visually hidden in browsers, but accessible for screen readers.</td>
-      </tr>
-      <tr>
-        <td>.ym-print</td>
-        <td>Elements are visually hidden in media screen, but accessible for screen readers and on media print. </td>
-      </tr>
-      <tr>
-        <td>.ym-noprint</td>
-        <td>Elements will not be printed, but are visible on any other media type.</td>
-      </tr>
-    </table>
-      </td>
-  </tr>
-</table>
-<p>&nbsp;</p>
-      </section>
-</div>
+    <h3>File structure</h3>
+    <pre class="box info">
+<small>
+yaml/
+  ├── add-ons/
+  │   ├── accessible-tabs/
+  │   │   ├── jquery.tabs.js
+  │   │   └── tabs.css
+  │   ├── microformats/
+  │   │   ├── icons/
+  │   │   └── microformats.css
+  │   ├── rtl-support/
+  │   │   ├── core/
+  │   │   │   ├── base-rtl.css
+  │   │   │   └── base-rtl.min.css
+  │   │   ├── navigation/
+  │   │   │   ├── hlist-rtl.css
+  │   │   │   └── vlist-rtl.css
+  │   │   └── screen/
+  │   │       └── typography-rtl.css
+  │   └── microformats
+  │       └── jquery.syncheight.css
+  ├── core/
+  │   ├── base.css
+  │   ├── base.min.css
+  │   ├── iehacks.css
+  │   └── iehacks.min.css
+  ├── forms/
+  │   └── gray-theme.css
+  ├── navigation/
+  │   ├── hlist.css
+  │   └── vlist.css
+  ├── print/
+  │   └── print.css
+  └── screen/
+      ├── grid-960-12.css
+      ├── grid-960-16.css
+      ├── screen-FULLPAGE-layout.css
+      ├── screen-PAGE-layout.css
+      └── typography.css
+</small>
+</pre>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Yaml4-cheat-sheet maintained by <a href="https://github.com/snapdragon274">snapdragon274</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <h3>Short reference</h3>
+
+    <div class="ym-grid">
+      <div class="ym-g50 ym-gl">
+        <div class="ym-gbox linearize-level-1">
+          <!-- content: grid-column left -->
+
+          <table>
+            <!-- about structuring a grid -->
+
+            <thead>
+              <tr>
+                <th scope="col">Grid class</th>
+
+                <th scope="col">Column Width</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.ym-g20</td>
+
+                <td>20%</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g25</td>
+
+                <td>25%</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g33</td>
+
+                <td>33.33%</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g38</td>
+
+                <td>38.2% (Golden Ratio)</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g50</td>
+
+                <td>50%</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g60</td>
+
+                <td>60%</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g62</td>
+
+                <td>61.8% (Golden Ratio)</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g66</td>
+
+                <td>66.66%</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g75</td>
+
+                <td>75%</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g80</td>
+
+                <td>80%</td>
+              </tr>
+            </tbody>
+          </table><!-- about layout -->
+
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Flexible Layouts</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.ym-wrapper</td>
+
+                <td>Separate values for width</td>
+              </tr>
+
+              <tr>
+                <td>.ym-wbox</td>
+
+                <td>Paddings and borders</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <!-- about floating -->
+
+            <thead>
+              <tr>
+                <th scope="col">Float Classes</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.ym-clearfix</td>
+
+                <td>Clearing floats without extra markup, avoids
+                margin-collapsing problems in static
+                containers.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-contain-dt</td>
+
+                <td>Containing floats, to display oversized
+                child-elements.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-contain-oh</td>
+
+                <td>Containing floats, overflow, for clipping of
+                oversized child-elements by the parent element
+                without scrollbars.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-contain-fl</td>
+
+                <td>Containing float, if relative positioning of
+                the attached element is needed.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <!-- about forms -->
+
+            <thead>
+              <tr>
+                <th scope="col">Form</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+
+              <tr>
+                <td>.ym-form</td>
+
+                <td>Parent class</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Row Wrapper</td>
+              </tr>
+
+              <tr>
+                <td>.ym-fbox</td>
+
+                <td>Creates box</td>
+              </tr>
+
+              <tr>
+                <td>.ym-fbox-footer</td>
+
+                <td>Box positioned as footer</td>
+              </tr>
+
+              <tr>
+                <td>.ym-fbox-wrap</td>
+
+                <td>Box wrapping</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>IE6 Helper Classes</td>
+              </tr>
+
+              <tr>
+                <td>.ym-fbox-text</td>
+
+                <td>For text input</td>
+              </tr>
+
+              <tr>
+                <td>.ym-fbox-select</td>
+
+                <td>Select-box</td>
+              </tr>
+
+              <tr>
+                <td>.ym-fbox-check</td>
+
+                <td>Check-box</td>
+              </tr>
+
+              <tr>
+                <td>.ym-fbox-button</td>
+
+                <td>For custom or submit button</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Optional classes</td>
+              </tr>
+
+              <tr>
+                <td>.ym-full</td>
+
+                <td>Provides a stacked view of labels and related
+                form elements. Width of all form elements is
+                normalized to 100% width.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-columnar</td>
+
+                <td>Provides columnar arrangementof form
+                elements.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-inline</td>
+
+                <td>Creates inline</td>
+              </tr>
+
+              <tr>
+                <td>.ym-required</td>
+
+                <td>Visually emphasizes as required</td>
+              </tr>
+
+              <tr>
+                <td>.ym-error</td>
+
+                <td>Highlights form fields with invalid form
+                elements.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-message</td>
+
+                <td>For output messages that will be correctly
+                aligned in all form styles</td>
+              </tr>
+
+              <tr>
+                <td>.ym-fbox heading</td>
+
+                <td>Use this before the button set for more
+                consistent appearance of forms.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-label</td>
+
+                <td>Forces any heading level to fit into your
+                theme</td>
+              </tr>
+            </thead>
+          </table>
+
+          <table>
+            <!-- all about coloumns -->
+
+            <thead>
+              <tr>
+                <th scope="col">Columns</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.ym-column</td>
+
+                <td>Parent class</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Child Classes</td>
+              </tr>
+
+              <tr>
+                <td>.ym-col[1|2|3]</td>
+
+                <td>For independent control of column widths and
+                paddings</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Optional Classes</td>
+              </tr>
+
+              <tr>
+                <td>.ym-cbox</td>
+
+                <td>Creates column box</td>
+              </tr>
+
+              <tr>
+                <td>.ym-cbox-left</td>
+
+                <td>Aligned left</td>
+              </tr>
+
+              <tr>
+                <td>.ym-cbox-right</td>
+
+                <td>Aligned right</td>
+              </tr>
+
+              <tr>
+                <td>.ym-linearize-level-1</td>
+
+                <td>Add to any column module you want to be
+                linearized</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <!-- all about Tabs -->
+
+            <thead>
+              <tr>
+                <th scope="col">Accessible Tabs</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.jquery_tabs</td>
+
+                <td>Specific elements become tab headings</td>
+              </tr>
+
+              <tr>
+                <td>.tabbody</td>
+
+                <td>Defines content (or its wrapper)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <!-- all about Tables -->
+
+            <thead>
+              <tr>
+                <th scope="col">Tables</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.bordertable</td>
+
+                <td>Classic table style</td>
+              </tr>
+
+              <tr>
+                <td>.narrow</td>
+
+                <td>Smaller table rows</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="ym-g50 ym-gr">
+        <div class="ym-gbox linearize-level-1 ym-clearfix">
+          <!-- content: grid-column right -->
+
+          <table class="bordertable">
+            <!-- about grids -->
+
+            <thead>
+              <tr>
+                <th scope="col">Grid</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.ym-grid</td>
+
+                <td>Parent class</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Child Classes</td>
+              </tr>
+
+              <tr>
+                <td>.ym-gl</td>
+
+                <td>Float direction is left</td>
+              </tr>
+
+              <tr>
+                <td>.ym-gr</td>
+
+                <td>Correction of rounding errors - floating
+                direction of last column to the right</td>
+              </tr>
+
+              <tr>
+                <td>.ym-g[xx]</td>
+
+                <td>Independent control of column- and
+                gutter-widths</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Optional Classes</td>
+              </tr>
+
+              <tr>
+                <td>.ym-equalize</td>
+
+                <td>Equalized column heights within a grid ro</td>
+              </tr>
+
+              <tr>
+                <td>.ym-gbox</td>
+
+                <td>Holds gutter vales (as padding or margin)</td>
+              </tr>
+
+              <tr>
+                <td>.ym-gbox-left</td>
+
+                <td>Aligned left</td>
+              </tr>
+
+              <tr>
+                <td>.ym-gbox-right</td>
+
+                <td>Alinged right</td>
+              </tr>
+
+              <tr>
+                <td>.linearize-level-1</td>
+
+                <td>Add to any grid module you want to be
+                linearized</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <!-- about Buttons -->
+
+            <thead>
+              <tr>
+                <th scope="col">Buttons</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.ym-button</td>
+
+                <td>Default button style and size</td>
+              </tr>
+
+              <tr>
+                <td>.ym-small</td>
+
+                <td>A smaller button</td>
+              </tr>
+
+              <tr>
+                <td>.ym-xsmall</td>
+
+                <td>A very small button</td>
+              </tr>
+
+              <tr>
+                <td>.ym-large</td>
+
+                <td>A more emphasized button</td>
+              </tr>
+
+              <tr>
+                <td>.ym-xlarge</td>
+
+                <td>A very large button</td>
+              </tr>
+
+              <tr>
+                <td>.ym-primary</td>
+
+                <td>Primary action button (purple)</td>
+              </tr>
+
+              <tr>
+                <td>.ym-success</td>
+
+                <td>Positive action button (green)</td>
+              </tr>
+
+              <tr>
+                <td>.ym-warning</td>
+
+                <td>"Take with care" action button (yellow)</td>
+              </tr>
+
+              <tr>
+                <td>.ym-danger</td>
+
+                <td>Dangerous action button (red)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <!-- all about Typography -->
+
+            <thead>
+              <tr>
+                <th scope="col">Typography</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>H1 - H6</td>
+
+                <td>Headings</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Special Paragraphs</td>
+              </tr>
+
+              <tr>
+                <td>Class="highlight"</td>
+
+                <td>Red</td>
+              </tr>
+
+              <tr>
+                <td>Class="dimmed"</td>
+
+                <td>Grey</td>
+              </tr>
+
+              <tr>
+                <td>Class="box info"</td>
+
+                <td>Grey box</td>
+              </tr>
+
+              <tr>
+                <td>Class="box success"</td>
+
+                <td>Green box</td>
+              </tr>
+
+              <tr>
+                <td>Class="box warning"</td>
+
+                <td>Yellow box</td>
+              </tr>
+
+              <tr>
+                <td>Class="box error"</td>
+
+                <td>Red box</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Misc. Elements</td>
+              </tr>
+
+              <tr>
+                <td>&lt;blockquote&gt;</td>
+
+                <td>Pragraph text within &lt;blockquote&gt;
+                element</td>
+              </tr>
+
+              <tr>
+                <td>&lt;pre&gt;</td>
+
+                <td>Preformatted text wrapped in &lt;pre&gt;
+                element</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Inline Semantic Text Decoration</td>
+              </tr>
+
+              <tr>
+                <td>&lt;a&gt;</td>
+
+                <td>Anchor</td>
+              </tr>
+
+              <tr>
+                <td>&lt;i&gt;, &lt;em&gt;</td>
+
+                <td>Italics and emphasized</td>
+              </tr>
+
+              <tr>
+                <td>&lt;big&gt;, &lt;small&gt;</td>
+
+                <td>Big and small</td>
+              </tr>
+
+              <tr>
+                <td>&lt;b&gt;, &lt;strong&gt;</td>
+
+                <td>Bold and strong</td>
+              </tr>
+
+              <tr>
+                <td>&lt;acronym&gt;, &lt;abbr&gt;</td>
+
+                <td>Acronym and abbreviation</td>
+              </tr>
+
+              <tr>
+                <td>&lt;cite&gt;, &lt;q&gt;</td>
+
+                <td>Cite and quote</td>
+              </tr>
+
+              <tr>
+                <td>&lt;code&gt;, &lt;dfn&gt;</td>
+
+                <td>Code and definition</td>
+              </tr>
+
+              <tr>
+                <td>&lt;tt&gt;, &lt;kdb&gt;</td>
+
+                <td>Teletype and keyboard</td>
+              </tr>
+
+              <tr>
+                <td>&lt;var&gt;, &lt;samp&gt;</td>
+
+                <td>Variable and sample</td>
+              </tr>
+
+              <tr>
+                <td>&lt;ins&gt;, &lt;del&gt;</td>
+
+                <td>Inserted and deleted</td>
+              </tr>
+
+              <tr>
+                <td>&lt;sub&gt;, &lt;sup&gt;</td>
+
+                <td>Subscript and superscript</td>
+              </tr>
+
+              <tr>
+                <td>&lt;mark&gt;</td>
+
+                <td>Marked, highlighted</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Media</td>
+              </tr>
+
+              <tr>
+                <td>.flexible</td>
+
+                <td>Flexible media (responsive)</td>
+              </tr>
+
+              <tr>
+                <td>.bodered</td>
+
+                <td>Add border to images or videos</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <!-- al about Accessibility -->
+
+            <thead>
+              <tr>
+                <th scope="col">Accessibility</th>
+
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.ym-skiplinks</td>
+
+                <td>Parent class, controls the visual properties of
+                the list. Unordered list.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-skip</td>
+
+                <td>Child class. Each link in the list is marked up
+                with this class. Required for skip anchors.</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+
+                <td>Optional Classes</td>
+              </tr>
+
+              <tr>
+                <td>.ym-hideme</td>
+
+                <td>Elements are visually hidden in browsers, but
+                accessible for screen readers.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-print</td>
+
+                <td>Elements are visually hidden in media screen,
+                but accessible for screen readers and on media
+                print.</td>
+              </tr>
+
+              <tr>
+                <td>.ym-noprint</td>
+
+                <td>Elements will not be printed, but are visible
+                on any other media type.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ym-ie-clearing">
+          &nbsp;
+        </div>
+      </div>
     </div>
+  </div>
 
-    
+  <div style="clear:both;"></div><!-- FOOTER  -->
 
-  </body>
+  <div class="ym-wrapper">
+    <div class="ym-wbox">
+      <p class="copyright">Yaml4-cheat-sheet maintained by <a href=
+      "https://github.com/snapdragon274">snapdragon274</a></p>
+
+      <p>Published with <a href="http://pages.github.com">GitHub
+      Pages</a></p>
+    </div>
+  </div>
+</body>
 </html>
