@@ -1,0 +1,32 @@
+/**
+ * Just a little individualised design
+ *
+ * @copyright		© 2014, Franziska Sponsel (Hendrik Eggers)
+ * @license			CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ * @link					https://snapdragon274.github.io/YAML4-cheat-sheet/
+ * @version         0.1
+ */
+ 
+ /* Google Font API */
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic);
+
+/* import core styles | Basis-Stylesheets einbinden */
+@import url(yaml/core/base.css);
+	
+/* import screen layout | Screen-Layout einbinden */
+@import url(yaml/navigation/hlist.css);
+@import url(yaml/forms/gray-theme.css);
+@import url(yaml/screen/typography.css);
+@import url(yaml/screen/grid-960gs-12.css);
+@import url(yaml/screen/screen-custom-grids.css);
+
+/* import print layout | Druck-Layout einbinden */
+@import url(yaml/print/print.css);
+
+ body > header { min-width: 760px; }
+ 
+ .ym-wrapper {
+	max-width: 80em;
+}
+
+.ym-wbox { padding: 10px; }
